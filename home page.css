@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.head{
+    width: 100%;
+    height: 65px;
+    padding-top: 5px;
+    
+    background-color: rgb(14, 56, 241);
+    border-radius: 10px;
+    margin-top: 5px;  
+}
+
+.head li{
+    display: inline;
+    list-style-type: none;   
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    
+}
+
+.head button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(14, 56, 241);
+    border: none;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0; 
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(12, 10, 10, 0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+   
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgb(14, 56, 241);
+  }
+
+  a:hover{
+      color: yellow;
+  }
+
+  .head button:hover{
+      color: yellow;
+  }
+
+  #logo{
+      
+      background-image: url(logo2.png);
+      background-size: cover;
+      margin-left: 10px;
+      margin-right: 50px;
+      padding-top: 10px;
+  }
+
+  #login{
+     float: right;
+    
+    overflow: hidden;
+     
+    
+  }
+
+
+
