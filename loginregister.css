@@ -65,7 +65,23 @@ button {
 	margin-top: 5px;	
 }
 
-
+.error {
+	background: #F2DEDE;
+	color: #A94442;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 20px auto;
+ }
+ 
+ .success {
+	background: #bcf5ca;
+	color: #11ca3d;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 20px auto;
+ }
 
 
 

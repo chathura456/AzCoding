@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIGN UP</title>
+	<title>Register</title>
 	<link rel="stylesheet" type="text/css" href="loginregister.css">
 </head>
 <body>
@@ -31,14 +31,14 @@
           <?php }?>
 
          
-          <?php if (isset($_GET['uname'])) { ?>
+          <?php if (isset($_GET['email'])) { ?>
                <input type="email" 
-                      name="uname" 
+                      name="email" 
                       placeholder="Email"
-                      value="<?php echo $_GET['uname']; ?>"><br>
+                      value="<?php echo $_GET['email']; ?>"><br>
           <?php }else{ ?>
                <input type="email" 
-                      name="uname" 
+                      name="email" 
                       placeholder="Email"><br>
           <?php }?>
 
