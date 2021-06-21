@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['id']) && !isset($_SESSION['Full_Name'])){
+    ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,12 +11,14 @@
 </head>
 <body>
 
-     <form action="" method="">
+     <form action="logincheck.php" method="post">
 	 <center>
 	 <div id="azlogo"></div>
      	<h2>User Login</h2>
-     	
-     	<input type="email" name="uname" placeholder="User Email"><br>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+     	<input type="email" name="email" placeholder="User Email"><br>
 
      	
      	<input type="password" name="password" placeholder="Password"><br>
@@ -22,3 +29,9 @@
      </form>
 </body>
 </html>
+<?php
+}else{
+    header("Location: homepage-test.php");
+}
+
+?>
