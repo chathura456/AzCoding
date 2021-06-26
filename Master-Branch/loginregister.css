@@ -4,12 +4,16 @@ body {
 	align-items: center;
 	height: 100vh;
 	flex-direction: column;
-    background:url(4.jpg);
+    background:url(2.jpg);
+	background-size: cover;
+	opacity: 95%;
+	
 }
 
 *{
 	font-family: sans-serif;
 	box-sizing: border-box;
+	
 }
 
 form {
@@ -18,7 +22,8 @@ form {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	background: #fff;
-	border-radius: 15px;	
+	border-radius: 15px;
+	
 }
 
 h2{
@@ -29,19 +34,23 @@ h2{
 	margin-right: 0px;
 	margin-top: 0px;
 	padding: 10px;
-	color: rgb(105, 8, 53);
+	color: rgb(187, 37, 37);
+	text-decoration: underline;
 	
 }
 
 input {
 	display: block;
-	border: 2px solid rgb(53, 178, 236);
+	border: 2px solid rgb(31, 164, 226);
 	width: 95%;
 	padding: 15px;
 	margin: 4px 10px;
-
+	border-radius: 30px;
 }
 
+input:focus {	
+	border-radius: 0px;	
+}
 
 button {
 	display: block;
@@ -56,13 +65,19 @@ button {
 	border: none;
 }
 
+button:hover{
+	opacity: .7;
+}
+
 #azlogo{
 	
-	width: 300px;
+	width: 350px;
 	height: 100px;
-	background: url(logo2.png);
+	background: url(1.png);
+	border-radius: 20px;
 	background-size: cover;	
-	margin-top: 5px;	
+	margin-top: 5px;
+		
 }
 
 .error {

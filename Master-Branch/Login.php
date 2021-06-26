@@ -24,7 +24,7 @@ if(!isset($_SESSION['id']) && !isset($_SESSION['Full_Name'])){
      	<input type="password" name="password" placeholder="Password"><br>
 
      	<button type="submit">Login</button>
-          <p>Don't have an Account?<a href="register.php" class="ca">Create an account</a></p>
+          <p>Don't have an Account? <a href="register.php" class="ca">Create an account</a></p>
 		  </center>
      </form>
 </body>
