@@ -35,11 +35,6 @@ nav{ /* navigation */
     overflow: auto;
     margin-left: 300px;
     margin-top: -104px;
-   
-   
-   
-    
-
 }
 
 nav ul{
@@ -83,9 +78,6 @@ nav ul li a:hover{
     font-weight: bold;
     text-align: center;
     position: relative;
-    
-    
-
 }
 
 .table1{
