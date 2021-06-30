@@ -22,8 +22,9 @@
 						<div class="form-group">
 							<label>Password</label>
 							<input name="password" type="password" class="form-control" placeholder="Enter Password">
-						</div>			
-						<button name="do_login" type="submit" class="btn btn-primary">Login</button> <a  class="btn btn-default" href="register.html"> Create Account</a>
+						</div>
+						<center>		
+						<button name="do_login" type="submit" class="btn btn-primary" >Login</button> </center>	
 						</form>
 						<?php endif; ?>
 					</div>
