@@ -5,6 +5,17 @@
     text-decoration: none;
     position: relative;
 }
+
+
+.background{  /* background wallpaper*/
+
+    background-size: cover;
+    height: 100vh;
+    height: 20%;  
+    position: relative; 
+
+}
+
 .logo img{  /* website logo*/
 
     width: 300px;
@@ -70,17 +81,41 @@ nav ul li a:hover{
 .intro{
 
     text-align: center;
-    
+    color: white;
 }
 
 .paragraph{
 
     text-align: center;
+    color: white;
+
     
 }
 
 .listhead{
 
 
+    margin-left: 430px;
+    color: white;
+}
+
+.listtable{
+
+    width: 850px;
     margin-left: 250px;
+}
+
+.tablehead{
+
+    height: 40px;
+    font-size: large;
+    background-color: aquamarine;
+}
+
+.tablerow{
+
+    height: 30px;
+    background-color:darkseagreen;
+
+
 }
