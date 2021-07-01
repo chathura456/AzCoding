@@ -26,12 +26,6 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="index.php">AzCoding</a>
         </div>
         <div class="collapse navbar-collapse">
@@ -40,7 +34,7 @@
 			<?php if(!isLoggedIn()) : ?>
 				<li><a href="register.php">Create An Account</a></li>
 			<?php else : ?>
-				<li><a href="create.php">Create Topic</a></li>
+				<li><a href="create.php">Create a Forum</a></li>
 			<?php endif; ?>
           </ul>
         </div><!--/.nav-collapse -->
@@ -52,7 +46,7 @@
 			<div class="col-md-8">
 				<div class="main-col">
 					<div class="block">
-						<h1 class="pull-left"><?php echo $title; ?></h1>
+						<h1 class="pull-left">Welcome To AZ Coding Forums!</h1>
 						<div class="clearfix"></div>
 						<hr>
 						<?php displayMessage(); ?>
