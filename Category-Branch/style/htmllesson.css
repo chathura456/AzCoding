@@ -108,14 +108,23 @@ nav ul li a:hover{
 .tablehead{
 
     height: 40px;
-    font-size: large;
+    font-size:x-large;
     background-color: aquamarine;
+    color: white;
 }
 
 .tablerow{
 
     height: 30px;
-    background-color:darkseagreen;
+    background-color:navy;
+    font-size: large;
+    color: white;
 
 
 }
+
+
+
+
+
+
