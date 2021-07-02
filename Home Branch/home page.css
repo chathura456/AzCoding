@@ -102,7 +102,7 @@ a{
 /*slider*/
   .slider{
     overflow: hidden;
-    width: 80%;
+    width: 60%;
     height: 80vh;
     background-size: cover;
     margin: 0px 100px 30px 100px;
@@ -262,8 +262,9 @@ margin-right: 30px;
 }
 
 .bgcolor{
-  background-color: rgb(164, 177, 250);
-  
+  background-image: url(Home-Images/7.jpg);
+  background-size: cover;
 }
+
 
 
