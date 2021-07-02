@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+   
 }
 
 /*navigation bar*/
@@ -9,10 +10,7 @@
     width: 100%;
     height: 65px;
     padding-top: 5px;
-    
-    background-color: rgb(14, 56, 241);
-    border-radius: 10px;
-    margin-top: 5px;  
+    background-color: rgb(14, 56, 241);   
 }
 
 .head li{
@@ -101,15 +99,109 @@ a{
     overflow: hidden;
   }
 
-/*Background Photo*/
-  .bphoto{
-    width: 100%;
-   height: 600px;
-   background-color: aquamarine;
-    background-image: url(13.jpeg);
+/*slider*/
+  .slider{
+    overflow: hidden;
+    width: 80%;
+    height: 80vh;
     background-size: cover;
-    padding: 10px; 
+    margin: 0px 100px 30px 100px;
+    padding-top: 30px;
+    background-position: center;
+    
   }
+
+/*one slide*/
+.slider figure div{
+  float: left;
+  width: 20%;
+
+}
+
+.slider figure img{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  animation: anim 40s infinite;
+}
+
+/*animation*/
+@keyframes anim{
+  0%{
+    left: 0%;
+  }
+
+  10%{
+    left: 0%;
+  }
+
+  12%{
+    left: -100%;
+  }
+
+  22%{
+    left: -100%;
+  }
+  24%{
+    left:-200%;
+  }
+
+  34%{
+    left:-200%;
+  }
+
+  36%{
+    left: -300%;
+  }
+  46%{
+    left: -300%;
+  }
+  48%{
+    left: -400%;
+  }
+
+  58%{
+    left: -400%;
+  }
+
+  60%{
+    left: -300%;
+  }
+
+  70%{
+    left: -300%;
+  }
+
+  72%{
+    left: -200%;
+  }
+
+  82%{
+    left: -200%;
+  }
+
+  84%{
+    left: -100%;
+  }
+
+  94%{
+    left: -100%;
+  }
+
+  96%{
+    left: 0%;
+  }
+
+}
 
   /*footer*/
   .footer{
@@ -169,6 +261,9 @@ margin-top: 280px;
 margin-right: 30px;
 }
 
-
+.bgcolor{
+  background-color: rgb(164, 177, 250);
+  
+}
 
 
