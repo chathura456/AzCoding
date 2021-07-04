@@ -1,4 +1,5 @@
 <?php
+
 class Topic{
 	//Init DB Variable
 	private $db;
