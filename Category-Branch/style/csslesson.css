@@ -81,7 +81,7 @@ nav ul li a:hover{
 .intro{
 
     text-align: center;
-    color: white;
+    color: cyan;
 }
 
 .paragraph{
@@ -94,4 +94,16 @@ nav ul li a:hover{
 
     color: white;
     margin-left: 360px;
+}
+
+.selector{
+
+    color: white;
+
+}
+
+.selector1{
+
+    color: cyan;
+
 }
