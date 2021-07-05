@@ -5,7 +5,7 @@ body {
 }
 
 a{
-	color:#5c5b69;
+	color:#010008;
 }
 
 ul{
@@ -87,12 +87,12 @@ h3{
 }
 
 .topic-content{
-	width:100%;
+	width:50%;
 	height: 100%;
 }
 
 img.avatar{
-	width:100%;
+	width:50%;
 }
 
 a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus{
@@ -127,11 +127,10 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 }
 
 .user-info li{
-	line-height:1.6em;
+	line-height:50px;
 }
 
 .btn-primary{
 	background:#5c5b69;
 
 }
-
