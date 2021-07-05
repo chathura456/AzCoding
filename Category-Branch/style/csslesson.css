@@ -2,9 +2,14 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    text-decoration: none;
-    position: relative;
+    
+   
 }
+body {
+
+    background: black;
+}
+
 .logo img{  /* website logo*/
 
     width: 300px;
@@ -17,16 +22,15 @@ nav{ /* navigation */
     width:auto;
     height: 100px;
     background: white;
-    overflow: auto;
     margin-left: 300px;
     margin-top: -104px;
-    position: absolute;
+   
 }
 
 nav ul{
 
     padding: 0;
-    margin: 0 0 0 250px;
+    margin: 0 0 0 150px;
     list-style: none;
    
 }
@@ -41,9 +45,10 @@ nav ul li a{
     width: 100px;
     display: block;
     padding: 20px 25px;
-    text-decoration: none;
+    text-decoration: none; 
     font-family: Arial, Helvetica, sans-serif;
     color:black;
+    font-weight: bold;
     margin-top: 15px;
    
     
@@ -65,4 +70,28 @@ nav ul li a:hover{
     font-weight: bold;
     text-align: center;
    
+}
+
+@media screen and (max-width: 600px ) {
+    
+    .container { width: 100px;}
+}
+
+
+.intro{
+
+    text-align: center;
+    color: white;
+}
+
+.paragraph{
+
+    text-align: center;
+    color: white;
+}
+
+.category {
+
+    color: white;
+    margin-left: 360px;
 }
