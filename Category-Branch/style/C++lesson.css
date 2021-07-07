@@ -76,3 +76,25 @@ nav ul li a:hover{
     
     .container { width: 100px;}
 }
+.intro{
+
+    text-align: center;
+    color: cyan;
+}
+
+.selector1{
+
+    color: cyan;
+    
+}
+
+.selector{
+
+    color: white;
+    margin-left: 360px;
+}
+
+.paragraph{
+
+    color: white;
+}
