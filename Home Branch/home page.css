@@ -89,8 +89,8 @@ a{
   #logo{ 
       background-image: url(logo2.png);
       background-size: cover;
-      margin-left: 10px;
-      margin-right: 50px;
+      margin-left: 50px;
+      margin-right: 200px;
       padding-top: 10px;
   }
 
