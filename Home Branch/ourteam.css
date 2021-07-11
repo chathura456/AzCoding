@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    height: 90vh;
+    background: url(./images/back.jpg);
+    background-size: cover;
+}
+
+/* Our Team */
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+}
+
+/* Heading */
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #c0392b;
+    font-size: 40px;
+}
+
+.bdr1{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background-color: #c0392b;
+    margin-bottom: 40px;
+}
+
+/* Images */
+.pic{
+    margin-bottom: 40px;
+}
+
+.pic a{
+    display: inline-block;
+    border: #c0392b 8px solid;
+    clip-path: polygon(50% 0%, 96% 79%, 47% 96%, 0% 100%, 0% 38%);
+    margin: 0 10px;
+    width: 160px;
+    height: 200px;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.pic a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.4s;
+}
+
+.pic a:hover > img{
+    filter: none;
+}
+
+.pic a:hover{
+    transform: rotate(-10deg);
+}
+
+/* Description */
+.desc{
+    width: 600px;
+    margin: auto;
+    background-color: #2c3e50;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #ecf0f1;
+    text-align: justify;
+    overflow: hidden;
+    height: 0;
+}
+
+.desc:target{
+    height: auto;
+    padding: 40px;
+    transition: all 0.3s ease-in;
+}
+
+.name, .social{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    transition: all 0.5s ease-in;
+}
+
+.social i{
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.social i:hover{
+    color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Bottom Div */
+.bdr2{
+    width: 20%;
+    margin: auto;
+    height: 5px;
+    background-color: #c0392b;
+}
