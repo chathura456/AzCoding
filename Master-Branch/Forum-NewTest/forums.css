@@ -95,26 +95,58 @@ input[type=text] {
   
 }
 
-.left{
+.right{
 
-  width: 55%;
+  width: 60%;
   height: 800px;
   background-color: white;
-  float: left;
+  float: right;
   padding: 20px;
   margin: 5%;
+  margin-left: 0%;
   border-radius: 10px;
   margin-top: 3%;
 }
 
-.right{
+.left{
 
-  width: 30%;
-  height: 200px;
+  width: 25%;
+  height: auto;
   background-color: white;
-  float: right;
+  float: left;
   margin: 5%;
-  margin-left: 0px;
+  margin-right: 0%;
+  padding-left: 0%;
   border-radius: 10px;
   margin-top: 3%;
+  padding: 20px;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+.cat li{
+  list-style: none;
+  padding: 10px;
+  font-size: 1.3rem;
+  
+}
+
+.cat a{
+  text-decoration: none;
+  color: black;
+}
+
+hr{
+  margin: 5px;
+}
+
+.cat li:hover{
+background-color: rgb(235, 155, 98);
+}
+
+
+.active{
+  background-color: chocolate;
 }
