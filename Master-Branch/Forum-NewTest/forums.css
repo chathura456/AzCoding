@@ -7,28 +7,83 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.topnav {
-    position: relative;
-    background-color: rgb(99, 40, 236);
-    overflow: hidden;
-   height: 50px;
-    align-items: center;
- 
-  }
-
-.logo{
-    position: relative;
-    background-image: url(1.png);
-    background-size: cover;
-}
-
-div li{
-    display: inline;  
-}
- 
   /* Right-aligned section inside the top navigation */
   .topnav-right {
     float: right;
   }
+
+  #main-header{
+    background-color: rgb(88, 6, 240);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/* Logo */
+.logo{
+    float: left;
+    background-image: url(1.png);
+    background-size: cover;
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Nav bar */
+#navbar{
+    margin-top: 10px;
+    float: right;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+#navbar a:hover{
+    
+    color: rgb(218, 241, 6);
+}
+
+input[type=text] {
+  
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  display: inline;
+  margin-left: 25%;
+}
+
+.search-container{
+  display: inline;
+  
+}
+
+.container .search-container button {
+  
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  
+
+}
   
