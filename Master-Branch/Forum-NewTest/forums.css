@@ -150,3 +150,21 @@ background-color: rgb(235, 155, 98);
 .active{
   background-color: chocolate;
 }
+
+.ques{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  text-align: justify;
+}
+
+.ques h3{
+  color: blue;
+  padding-bottom: 5px;
+}
+
+.ques p{
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+}
