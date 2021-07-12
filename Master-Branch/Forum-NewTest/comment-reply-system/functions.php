@@ -2,9 +2,9 @@
 	// Set logged in user id: This is just a simulation of user login. We haven't implemented user log in
 	// But we will assume that when a user logs in, 
 	// they are assigned an id in the session variable to identify them across pages
-	$user_id = 1;
+	$user_id = 2;
 	// connect to database
-	$db = mysqli_connect("localhost", "root", "", "comment-reply-system");
+	$db = mysqli_connect("localhost", "root", "", "comment-reply-system2");
 	// get post with id 1 from database
 	$post_query_result = mysqli_query($db, "SELECT * FROM posts WHERE id=1");
 	$post = mysqli_fetch_assoc($post_query_result);
