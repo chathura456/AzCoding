@@ -53,8 +53,7 @@ body{
 
 .pic a{
     display: inline-block;
-    border: #c0392b 8px solid;
-    
+    border: #c0392b 6px solid;
     margin: 0 20px;
     width: 200px;
     height: 200px;
@@ -101,17 +100,18 @@ body{
     display: block;
     margin-bottom: 30px;
     text-align: center;
-    text-transform: uppercase;
     font-size: 30px;
     transition: all 0.5s ease-in;
 }
 
 .name{
     margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .stdid{
     font-size: 15px;
+    
 }
 
 .social i{

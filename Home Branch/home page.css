@@ -191,38 +191,52 @@ a{
     display: flex;
 	  justify-content: center;
 	  align-items: center;
+    font-family: sans-serif;
   }
 
   .Cprograming{
-    width: 50%;
+    width: 48%;
     height: 350px;
      background-image: url(home-images/c4.png);
      background-size: cover;
      float: left;
+     margin: 15px;
+     border: solid 5px rgb(4, 3, 82);
+    
+
   }
 
   .html{
-    width: 50%;
+    width: 48%;
     height: 350px;
      background-image: url(home-images/ht7.jpg);
      background-size: cover;
      float: right;
+     margin: 15px;
+     margin-left: 0px;
+     
+     border: solid 5px rgb(4, 3, 82);
   }
 
   .css{
-    width: 50%;
+    width: 48%;
     height: 350px;
      background-image: url(home-images/cs4.png);
      background-size: cover;
      float: left;
+     margin: 15px;
+     border: solid 5px rgb(4, 3, 82);;
   }
 
   .java{
-    width: 50%;
+    width: 48%;
     height: 350px;
      background-image: url(home-images/java2.png);
      background-size: cover;
      float: right;
+     margin: 15px;
+     border: solid 5px rgb(4, 3, 82);
+     margin-left: 0px;
   }
 
 .learn{
