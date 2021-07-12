@@ -6,7 +6,8 @@
 body{
     font-family: sans-serif;
     height: 90vh;
-    background: url(./images/back.jpg);
+    background: url(home-images/back8.jpg) ;
+
     background-size: cover;
 }
 
@@ -20,9 +21,9 @@ body{
 /* Heading */
 .team-section h1{
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     color: #c0392b;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .bdr1{
@@ -31,7 +32,8 @@ body{
     width: 160px;
     height: 3px;
     background-color: #c0392b;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    
 }
 
 /* Images */
@@ -42,12 +44,13 @@ body{
 .pic a{
     display: inline-block;
     border: #c0392b 8px solid;
-    clip-path: polygon(50% 0%, 96% 79%, 47% 96%, 0% 100%, 0% 38%);
+    
     margin: 0 10px;
     width: 160px;
-    height: 200px;
+    height: 160px;
     overflow: hidden;
     transition: all 0.5s ease-in;
+    
 }
 
 .pic a img{
@@ -95,11 +98,13 @@ body{
 .social i{
     cursor: pointer;
     transition: all 0.3s ease-in;
+    color: white;
 }
 
 .social i:hover{
     color: #c0392b;
     transform: translateY(-2px);
+    
 }
 
 /* Bottom Div */
@@ -109,3 +114,4 @@ body{
     height: 5px;
     background-color: #c0392b;
 }
+
