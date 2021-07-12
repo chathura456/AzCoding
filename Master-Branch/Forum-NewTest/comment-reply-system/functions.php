@@ -1,10 +1,11 @@
 <?php 
-	// Set logged in user id: This is just a simulation of user login. We haven't implemented user log in
-	// But we will assume that when a user logs in, 
-	// they are assigned an id in the session variable to identify them across pages
-	$user_id = 2;
+session_start();
+include "db_conn.php";
+if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
+
+	$user_id = $_SESSION['id'];
 	// connect to database
-	$db = mysqli_connect("localhost", "root", "", "comment-reply-system2");
+	$db = $conn;
 	// get post with id 1 from database
 	$post_query_result = mysqli_query($db, "SELECT * FROM posts WHERE id=1");
 	$post = mysqli_fetch_assoc($post_query_result);
@@ -108,3 +109,8 @@ if (isset($_POST['reply_posted'])) {
 		exit();
 	}
 }
+
+}
+else{?>
+<a href="login.php">login1</a>
+<?php } ?>  

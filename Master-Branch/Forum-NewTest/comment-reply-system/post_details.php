@@ -1,4 +1,10 @@
-<?php include('functions.php'); ?>
+<?php 
+
+
+include('functions.php');
+if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +19,7 @@
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 post">
 			<h2><?php echo $post['title'] ?></h2>
-			$post_query_result = mysqli_query($db, "SELECT * FROM posts WHERE id=1");
-	$post = mysqli_fetch_assoc($post_query_result);
+			
 			
 		</div>
 		<div class="col-md-6 col-md-offset-3 comments-section">
@@ -86,5 +91,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="scripts.js"></script>
+else{?>
+  <a href="login.php">login1</a>
+  <?php } ?>
 </body>
 </html>
