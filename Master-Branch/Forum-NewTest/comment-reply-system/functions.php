@@ -9,6 +9,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	// get post with id 1 from database
 	$post_query_result = mysqli_query($db, "SELECT * FROM posts WHERE id=1");
 	$post = mysqli_fetch_assoc($post_query_result);
+	$cat="";
+	while($result=$post){
+		$cat ="<option value=\"{$result['id']}\">{$result['title']}</option>";
+	}
 
 	// Get all comments from database
 	$comments_query_result = mysqli_query($db, "SELECT * FROM comments WHERE post_id=" . $post['id'] . " ORDER BY created_at DESC");
@@ -45,8 +49,9 @@ if (isset($_POST['comment_posted'])) {
 	global $db;
 	// grab the comment that was submitted through Ajax call
 	$comment_text = $_POST['comment_text'];
+	$category = $_POST['category'];
 	// insert comment into database
-	$sql = "INSERT INTO comments (post_id, user_id, body, created_at, updated_at) VALUES (1, " . $user_id . ", '$comment_text', now(), null)";
+	$sql = "INSERT INTO comments (post_id, user_id, body, Category, created_at, updated_at) VALUES (1, " . $user_id . ", '$comment_text','$category', now(), null)";
 	$result = mysqli_query($db, $sql);
 	// Query same comment from database to send back to be displayed
 	$inserted_id = $db->insert_id;

@@ -1,6 +1,6 @@
 <?php 
 
-
+include "db_conn.php";
 include('functions.php');
 if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 
@@ -16,6 +16,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 </head>
 <body>
 <div class="container">
+<a href="#">Hi,<?php echo $_SESSION['Full_Name']; ?> </a>
+<button><a href="logout.php">Logout</a></button>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 post">
 			<h2><?php echo $post['title'] ?></h2>
@@ -26,6 +28,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 			<!-- if user is not signed in, tell them to sign in. If signed in, present them with comment form -->
 			<?php if (isset($user_id)): ?>
 				<form class="clearfix" action="post_details.php" method="post" id="comment_form">
+				<label for="category">Choose a category:</label>
+                    <select name="category" id="category">
+					<?php echo $cat; ?>
+                    </select>
 					<textarea name="comment_text" id="comment_text" class="form-control" cols="30" rows="3"></textarea>
 					<button class="btn btn-primary btn-sm pull-right" id="submit_comment">Submit comment</button>
 				</form>
@@ -91,8 +97,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="scripts.js"></script>
-else{?>
-  <a href="login.php">login1</a>
-  <?php } ?>
+
 </body>
 </html>
+
+<?php 
+}else{
+     header("Location: login.php");
+     exit();
+}
+ ?>

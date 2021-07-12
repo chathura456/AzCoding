@@ -31,7 +31,7 @@ if(!isset($_SESSION['id']) && !isset($_SESSION['Full_Name'])){
 </html>
 <?php
 }else{
-    header("Location: homepage-test.php");
+    header("Location: post_details.php");
 }
 
 ?>
