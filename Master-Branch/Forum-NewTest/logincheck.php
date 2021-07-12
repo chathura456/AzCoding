@@ -31,9 +31,9 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
-            if ($row['Email'] === $email && $row['Password'] === $pass) {
-            	$_SESSION['Email'] = $row['Email'];
-            	$_SESSION['Full_Name'] = $row['Full_Name'];
+            if ($row['email'] === $email && $row['password'] === $pass) {
+            	$_SESSION['Email'] = $row['email'];
+            	$_SESSION['Full_Name'] = $row['username'];
             	$_SESSION['id'] = $row['id'];
             	header("Location: homepage-test.php");
 		        exit();

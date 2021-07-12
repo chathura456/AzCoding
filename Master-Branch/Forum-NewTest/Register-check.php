@@ -50,14 +50,14 @@ if (isset($_POST['email']) && isset($_POST['password'])
 		// hashing the password
         $pass = md5($pass);
 
-	    $sql = "SELECT * FROM users WHERE Email='$email' ";
+	    $sql = "SELECT * FROM users WHERE email='$email' ";
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0) {
 			header("Location: Register.php?error=The username is taken try another&$user_data");
 	        exit();
 		}else {
-           $sql2 = "INSERT INTO users(Email, Password, Full_Name) VALUES('$email', '$pass', '$name')";
+           $sql2 = "INSERT INTO users(email, password, username) VALUES('$email', '$pass', '$name')";
            $result2 = mysqli_query($conn, $sql2);
            if ($result2) {
            	 header("Location: Register.php?success=Your account has been created successfully");

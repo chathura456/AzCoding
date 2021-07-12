@@ -13,7 +13,9 @@
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 post">
 			<h2><?php echo $post['title'] ?></h2>
-			<p><?php echo $post['body']; ?></p>
+			$post_query_result = mysqli_query($db, "SELECT * FROM posts WHERE id=1");
+	$post = mysqli_fetch_assoc($post_query_result);
+			
 		</div>
 		<div class="col-md-6 col-md-offset-3 comments-section">
 			<!-- if user is not signed in, tell them to sign in. If signed in, present them with comment form -->
