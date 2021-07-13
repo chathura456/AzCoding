@@ -1,13 +1,9 @@
 $(document).ready(function(){
-	
 	// When user clicks on submit comment to add comment under post
 	$(document).on('click', '#submit_comment', function(e) {
 		e.preventDefault();
 		var comment_text = $('#comment_text').val();
 		var url = $('#comment_form').attr('action');
-		$("#category").change(function() {
-			var category=$(this).val();
-		
 		// Stop executing if not value is entered
 		if (comment_text === "" ) return;
 		$.ajax({
@@ -15,8 +11,7 @@ $(document).ready(function(){
 			type: "POST",
 			data: {
 				comment_text: comment_text,
-				comment_posted: 1,
-				category:category,	
+				comment_posted: 1
 			},
 			success: function(data){
 				var response = JSON.parse(data);
@@ -26,11 +21,9 @@ $(document).ready(function(){
 					$('#comments-wrapper').prepend(response.comment)
 					$('#comments_count').text(response.comments_count); 
 					$('#comment_text').val('');
-					$('#category').val('');
 				}
 			}
 		});
-	});
 	});
 	// When user clicks on submit reply to add reply under comment
 	$(document).on('click', '.reply-btn', function(e){
