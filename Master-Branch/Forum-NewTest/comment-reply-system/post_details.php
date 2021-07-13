@@ -27,6 +27,17 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 			<!-- if user is not signed in, tell them to sign in. If signed in, present them with comment form -->
 			<?php if (isset($user_id)): ?>
 				<form class="clearfix" action="post_details.php" method="post" id="comment_form">
+				<label for="category">Choose a category:</label>
+                    <select name="category" id="category">
+						<option selected="selected" disabled>--Select--</option>
+					<?php  
+					$cat = mysqli_query($db,"select * from posts order by id");
+					while($row = mysqli_fetch_array($cat)){ ?>
+					   <option value="<?php echo $row['id'];?>">
+	                   <?php echo $row['title'];?>
+	                   </option>
+	                  <?php } ?>
+                    </select>
 					<textarea name="comment_text" id="comment_text" class="form-control" cols="30" rows="3"></textarea>
 					<button class="btn btn-primary btn-sm pull-right" id="submit_comment">Submit comment</button>
 				</form>

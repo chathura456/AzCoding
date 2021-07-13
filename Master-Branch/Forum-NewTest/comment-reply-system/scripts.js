@@ -1,4 +1,21 @@
 $(document).ready(function(){
+
+/*	$("#category").change(function() {
+		var category=$(this).val();
+		var url = $('#comment_form').attr('action');
+		$.ajax({
+			url: url,
+			type: "POST",
+			data: {
+				category:category,	
+			},
+			success: function(data){	
+				
+			}
+		});
+	
+	
+	});*/
 	// When user clicks on submit comment to add comment under post
 	$(document).on('click', '#submit_comment', function(e) {
 		e.preventDefault();
@@ -6,24 +23,29 @@ $(document).ready(function(){
 		var url = $('#comment_form').attr('action');
 		// Stop executing if not value is entered
 		if (comment_text === "" ) return;
+		var category=$('#category').val();
 		$.ajax({
 			url: url,
 			type: "POST",
 			data: {
 				comment_text: comment_text,
-				comment_posted: 1
+				comment_posted: 1,
+				category:category,	
 			},
 			success: function(data){
 				var response = JSON.parse(data);
+				
 				if (data === "error") {
 					alert('There was an error adding comment. Please try again');
 				} else {
 					$('#comments-wrapper').prepend(response.comment)
 					$('#comments_count').text(response.comments_count); 
 					$('#comment_text').val('');
+					$('#category').val('');
 				}
 			}
 		});
+	
 	});
 	// When user clicks on submit reply to add reply under comment
 	$(document).on('click', '.reply-btn', function(e){

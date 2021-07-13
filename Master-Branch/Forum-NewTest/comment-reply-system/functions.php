@@ -49,7 +49,7 @@ if (isset($_POST['comment_posted'])) {
 	$comment_text = $_POST['comment_text'];
 	$category = $_POST['category'];
 	// insert comment into database
-	$sql = "INSERT INTO comments (post_id, user_id, body, Category, created_at, updated_at) VALUES (1, " . $user_id . ", '$comment_text','$category', now(), null)";
+	$sql = "INSERT INTO comments (post_id, user_id, body, category, created_at, updated_at) VALUES (1, " . $user_id . ", '$comment_text','$category', now(), null)";
 	$result = mysqli_query($db, $sql);
 	// Query same comment from database to send back to be displayed
 	$inserted_id = $db->insert_id;
