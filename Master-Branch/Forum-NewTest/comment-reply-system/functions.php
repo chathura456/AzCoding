@@ -9,10 +9,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	// get post with id 1 from database
 	$post_query_result = mysqli_query($db, "SELECT * FROM posts WHERE id=1");
 	$post = mysqli_fetch_assoc($post_query_result);
-	$cat="";
-	while($result=$post){
-		$cat ="<option value=\"{$result['id']}\">{$result['title']}</option>";
-	}
+	
+	
 
 	// Get all comments from database
 	$comments_query_result = mysqli_query($db, "SELECT * FROM comments WHERE post_id=" . $post['id'] . " ORDER BY created_at DESC");
