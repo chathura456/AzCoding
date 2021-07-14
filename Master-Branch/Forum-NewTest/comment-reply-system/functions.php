@@ -13,7 +13,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	
 
 	// Get all comments from database
-	$comments_query_result = mysqli_query($db, "SELECT * FROM comments WHERE post_id=" . $post['id'] . " ORDER BY created_at DESC");
+	$comments_query_result = mysqli_query($db, "SELECT * FROM comments WHERE category=1 ORDER BY created_at DESC");
 	$comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
 
 	// Receives a user id and returns the username
@@ -81,6 +81,18 @@ if (isset($_POST['comment_posted'])) {
 		echo "error";
 		exit();
 	}
+}
+
+if (isset($_POST['cttype'])){
+	$ct=$_POST['cttype'];
+	
+
+	$post_query_result1 = mysqli_query($db, "SELECT * FROM comments WHERE category='1'");
+	$post1 = mysqli_fetch_assoc($post_query_result1);
+
+	$comments_query_result1 = mysqli_query($db, "SELECT * FROM comments WHERE category=" . $post1['category'] . " ORDER BY created_at DESC");
+	$comments1 = mysqli_fetch_all($comments_query_result1, MYSQLI_ASSOC);
+
 }
 // If the user clicked submit on reply form...
 if (isset($_POST['reply_posted'])) {

@@ -1,21 +1,5 @@
 $(document).ready(function(){
 
-/*	$("#category").change(function() {
-		var category=$(this).val();
-		var url = $('#comment_form').attr('action');
-		$.ajax({
-			url: url,
-			type: "POST",
-			data: {
-				category:category,	
-			},
-			success: function(data){	
-				
-			}
-		});
-	
-	
-	});*/
 	// When user clicks on submit comment to add comment under post
 	$(document).on('click', '#submit_comment', function(e) {
 		e.preventDefault();
@@ -80,4 +64,28 @@ $(document).ready(function(){
 			});
 		});
 	});
+
+	$(document).on('click', '.chkclz', function(e){
+	e.preventDefault();
+		var cttype=$('#chkbox').val();
+		var url1 = $('#comment_form2').attr('action');
+
+		$.ajax({
+			url:url1,
+			method:'POST',
+			data:{cttype:cttype},
+			success:function(data){
+				if (data === "error") {
+					alert('There was an error adding comment. Please try again');
+				} else {
+				$("#chkbox").val();
+				$("#txtchange").text("Filtered");
+				alert(data);	
+				}
+				
+			}
+
+		});
+  });
+
 });

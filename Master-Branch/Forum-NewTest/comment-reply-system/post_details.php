@@ -21,6 +21,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 post">
 			<h2><?php echo $post['title'] ?></h2>
+			<h2 id="txtchange">All Categories</h2>
+			<div><button>All Categories</button>
+			<button>C programming</button>
+			<button>HTML</button>
+			<button>CSS</button>
+			<button>JAVA</button>
+		</div>
+			
+					
 			
 		</div>
 		<div class="col-md-6 col-md-offset-3 comments-section">
