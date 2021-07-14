@@ -80,3 +80,27 @@ nav ul li a:hover{
     position: relative;
 }
 
+@media screen and (max-width: 600px ) {
+    
+    .container { width: 100px;}
+}
+
+.intro{
+
+    text-align: center;
+    color: cyan;
+}
+
+
+.paragraph{
+
+    text-align: center;
+    color: white;
+}
+
+.category {
+
+    color: white;
+    margin-left: 480px;
+}
+
