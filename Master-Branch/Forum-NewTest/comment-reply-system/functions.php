@@ -13,7 +13,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	
 
 	// Get all comments from database
-	$comments_query_result = mysqli_query($db, "SELECT * FROM comments WHERE category=1 ORDER BY created_at DESC");
+	$comments_query_result = mysqli_query($db, "SELECT * FROM comments ORDER BY created_at DESC");
 	$comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
 
 	
