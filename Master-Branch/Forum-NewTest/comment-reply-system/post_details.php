@@ -21,15 +21,92 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 post">
 			<h2><?php echo $post['title'] ?></h2>
-			<h2 id="txtchange">All Categories</h2>
-			<div><button>All Categories</button>
-			<button>C programming</button>
-			<button>HTML</button>
-			<button>CSS</button>
-			<button>JAVA</button>
-		</div>
 			
-					
+			<h2 id="txtchange">All Categories</h2>
+			
+			
+                <form action="" method="GET">
+                    <div class="card shadow mt-3">
+                        <div class="card-header">
+                            <h5>Filter 
+                                <button type="submit" class="btn btn-primary btn-sm float-end" value="Submit" name="submit">Search</button>
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <h6>Category List</h6>
+                            <hr>
+                            <?php  
+					$cat = mysqli_query($db,"select * from posts order by id");
+					while($row = mysqli_fetch_array($cat)){ ?>
+					   <input type="checkbox" name="brands[]" value="<?php echo $row['id'];?>">
+	                   <?php echo $row['title'];?>
+	                   </option>
+					   
+	                  <?php } ?>
+                        </div>
+                    </div>
+                </form>
+			
+				<?php
+if(isset($_GET['submit'])){
+
+    if(!empty($_GET['brands'])) {
+		$branchecked = [];
+        $branchecked = $_GET['brands'];
+
+        foreach($branchecked as $value){
+            echo "Chosen colour : ".$value.'<br/>';
+			$comments_query_result1 = mysqli_query($db, "SELECT * FROM comments WHERE category IN ($value) ORDER BY created_at DESC");
+			$comments1 = mysqli_fetch_all($comments_query_result1, MYSQLI_ASSOC);
+
+
+			
+        }
+        
+    }
+
+}else{
+	echo "Chosen colour : ";
+}
+?>
+<?php if (isset($comments1)): ?>
+<?php foreach ($comments1 as $comment1): ?>
+	<div class="comment clearfix">
+					<img src="profile.png" alt="" class="profile_pic">
+					<div class="comment-details">
+						<span class="comment-name"><?php echo getUsernameById($comment1['user_id']) ?></span>
+						<span class="comment-date"><?php echo date("F j, Y ", strtotime($comment1["created_at"])); ?></span>
+						<p><?php echo $comment1['body']; ?></p>
+						<a class="reply-btn" href="#" data-id="<?php echo $comment1['id']; ?>">reply</a>
+					</div>
+					<!-- reply form -->
+					<form action="post_details.php" class="reply_form clearfix" id="comment_reply_form_<?php echo $comment1['id'] ?>" data-id="<?php echo $comment['id']; ?>">
+						<textarea class="form-control" name="reply_text" id="reply_text" cols="30" rows="2"></textarea>
+						<button class="btn btn-primary btn-xs pull-right submit-reply">Submit reply</button>
+					</form>
+
+					<!-- GET ALL REPLIES -->
+					<?php $replies = getRepliesByCommentId($comment1['id']) ?>
+					<div class="replies_wrapper_<?php echo $comment1['id']; ?>">
+						<?php if (isset($replies)): ?>
+							<?php foreach ($replies as $reply): ?>
+								<!-- reply -->
+								<div class="comment reply clearfix">
+									<img src="profile.png" alt="" class="profile_pic">
+									<div class="comment-details">
+										<span class="comment-name"><?php echo getUsernameById($reply['user_id']) ?></span>
+										<span class="comment-date"><?php echo date("F j, Y ", strtotime($reply["created_at"])); ?></span>
+										<p><?php echo $reply['body']; ?></p>
+										<a class="reply-btn" href="#">reply</a>
+									</div>
+								</div>
+							<?php endforeach ?>
+						<?php endif ?>
+					</div>
+				</div>
+	<p><?php echo $comment1['body']; ?></p>	
+	<?php endforeach ?>	
+	<?php endif ?>				
 			
 		</div>
 		<div class="col-md-6 col-md-offset-3 comments-section">

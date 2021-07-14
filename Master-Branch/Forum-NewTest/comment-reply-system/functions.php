@@ -16,6 +16,16 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	$comments_query_result = mysqli_query($db, "SELECT * FROM comments WHERE category=1 ORDER BY created_at DESC");
 	$comments = mysqli_fetch_all($comments_query_result, MYSQLI_ASSOC);
 
+	
+
+	if (isset($_POST['btn'])){
+		$cid = $_POST['btn'];
+
+		$comments_query_result1 = mysqli_query($db, "SELECT * FROM comments WHERE category=.$cid. ORDER BY created_at DESC");
+	$comments1 = mysqli_fetch_all($comments_query_result1, MYSQLI_ASSOC);
+
+	}
+    
 	// Receives a user id and returns the username
 	function getUsernameById($id)
 	{

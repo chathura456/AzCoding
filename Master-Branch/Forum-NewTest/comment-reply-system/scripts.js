@@ -65,27 +65,25 @@ $(document).ready(function(){
 		});
 	});
 
-	$(document).on('click', '.chkclz', function(e){
-	e.preventDefault();
-		var cttype=$('#chkbox').val();
-		var url1 = $('#comment_form2').attr('action');
-
-		$.ajax({
-			url:url1,
-			method:'POST',
-			data:{cttype:cttype},
-			success:function(data){
-				if (data === "error") {
-					alert('There was an error adding comment. Please try again');
-				} else {
-				$("#chkbox").val();
-				$("#txtchange").text("Filtered");
-				alert(data);	
-				}
-				
-			}
-
-		});
-  });
-
+	
 });
+
+function func1(){
+	
+	$cid=$('#cat1').val();
+	$.ajax({
+		url:"functions.php",
+		type:"POST",
+		data:cid,
+		beforeSend:function(){
+			$(".cont").html("<span>working...</span>");
+		},
+		success:function(data){
+			$(".cont").html(data);
+			alert('hi');
+		}
+	})
+	
+	
+
+}
