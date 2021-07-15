@@ -51,6 +51,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 		return $data['total'];
 	}
 
+
+
     //...
 // If the user clicked submit on comment form...
 if (isset($_POST['comment_posted'])) {
@@ -63,9 +65,8 @@ if (isset($_POST['comment_posted'])) {
 	$result = mysqli_query($db, $sql);
 	// Query same comment from database to send back to be displayed
 	$inserted_id = $db->insert_id;
-	$res = mysqli_query($db, "SELECT * FROM comments WHERE id=$inserted_id");
+	$res = mysqli_query($db, "SELECT * FROM comments ORDER BY created_at DESC");
 	$inserted_comment = mysqli_fetch_assoc($res);
-
 	
 	// if insert was successful, get that same comment from the database and return it
 	if ($result) {

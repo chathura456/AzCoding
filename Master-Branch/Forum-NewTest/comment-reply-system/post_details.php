@@ -22,22 +22,20 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 post">
 			
-			<h2 id="txtchange">All Categories</h2>
-			
+			<h2 id="txtchange">Select Category</h2>
+			<!-- Category Filter -->
                 <form action="" method="GET">
                     <div id="myDIV">
-                            <h6>Category List</h6>
 							<button name="brands1[]" value="10" >All Category</button>	
-                         
                             <?php  
 					$cat = mysqli_query($db,"select * from posts order by id");
 					while($row = mysqli_fetch_array($cat)){ ?>
-					<button  value="<?php echo $row['id'];?>" name="brands[]" value="10"><?php echo $row['title'];?></button>   
+					<button  value="<?php echo $row['id'];?>" name="brands[]" ><?php echo $row['title'];?></button>   
 	                  <?php } ?>   
                     </div>
                 </form></div>
+				<!-- End of Category Filter -->
 
-	
 				
 		<!-- Comment Submit Section -->
 		<div class="col-md-6 col-md-offset-3 comments-section">
@@ -56,14 +54,66 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	                  <?php } ?>
                     </select>
 					<textarea name="comment_text" id="comment_text" class="form-control" cols="30" rows="3"></textarea>
-					<button class="btn btn-primary btn-sm pull-right" id="submit_comment">Submit comment</button>
+					<button class="btn btn-primary btn-sm pull-right" id="submit_comment" onclick="func1();">Submit comment</button>
 				</form>
 			<?php else: ?>
 				<div class="well" style="margin-top: 20px;">
 					<h4 class="text-center"><a href="#">Sign in</a> to post a comment</h4>
 				</div>
 			<?php endif ?><!-- End of Comment Submit Section -->
-			
+			<div id="allcat" style="display:none"><h1>All Categories</h1></div>
+	<div id="ctype">
+	<?php
+if(isset($_GET['brands'])){
+
+    if(!empty($_GET['brands'])) {
+		$branchecked = [];
+        $branchecked = $_GET['brands'];
+
+        foreach($branchecked as $value){?>
+		<?php
+			if($value==1){?>
+					<h1>HTML</h1><?php		
+			}?>
+		<?php
+			if($value==3){?>
+					<h1 >CSS</h1><?php		
+			}?>
+		<?php
+			if($value==2){?>
+					<h1 >JAVA</h1><?php		
+			}?>
+		<?php
+			if($value==4){?>
+					<h1 >C Programming</h1><?php		
+			}?>
+				
+			<?php		
+        }    
+    }
+
+}else {?> 	 
+<?php	
+}?>
+
+		
+<?php
+	if(isset($_GET['brands1'])){
+
+    	if(!empty($_GET['brands1'])) {
+		$branchecked2 = [];
+        $branchecked2 = $_GET['brands1'];
+
+        	foreach($branchecked2 as $value1){?>
+			<?php
+			if($value1==10){?>
+					<h1>All Categories</h1><?php		
+			}?>
+			<?php
+        	}        
+    	}
+	}else{}?>
+	</div>		
 			
 <!-- Query filter for Categories -->
 			<?php
@@ -73,7 +123,8 @@ if(isset($_GET['brands'])){
 		$branchecked = [];
         $branchecked = $_GET['brands'];
 
-        foreach($branchecked as $value){
+        foreach($branchecked as $value){?>	
+			<?php
 			$comments_query_result1 = mysqli_query($db, "SELECT * FROM comments WHERE category IN ($value) ORDER BY created_at DESC");
 			$comments1 = mysqli_fetch_all($comments_query_result1, MYSQLI_ASSOC);
 			?>
@@ -95,8 +146,7 @@ if(isset($_GET['brands'])){
 		$branchecked2 = [];
         $branchecked2 = $_GET['brands1'];
 
-        	foreach($branchecked2 as $value1){?>
-            
+        	foreach($branchecked2 as $value1){?>   
 			<?php
 			$comments_query_result1 = mysqli_query($db, "SELECT * FROM comments ORDER BY created_at DESC");
 			$comments1 = mysqli_fetch_all($comments_query_result1, MYSQLI_ASSOC);	

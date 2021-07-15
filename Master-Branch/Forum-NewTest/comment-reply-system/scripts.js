@@ -3,6 +3,7 @@ $(document).ready(function(){
 	// When user clicks on submit comment to add comment under post
 	$(document).on('click', '#submit_comment', function(e) {
 		e.preventDefault();
+		
 		var comment_text = $('#comment_text').val();
 		var url = $('#comment_form').attr('action');
 		// Stop executing if not value is entered
@@ -19,6 +20,7 @@ $(document).ready(function(){
 			success: function(data){
 				var response = JSON.parse(data);
 				
+				
 				if (data === "error") {
 					alert('There was an error adding comment. Please try again');
 				} else {
@@ -26,7 +28,9 @@ $(document).ready(function(){
 					$('#comments_count').text(response.comments_count); 
 					$('#comment_text').val('');
 					$('#category').val('');
+					
 				}
+				
 			}
 		});
 	
@@ -81,4 +85,10 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+function func1(){
+	$("#ctype").hide();
+	$("#allcat").show();
+
 }
