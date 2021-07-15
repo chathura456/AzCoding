@@ -10,35 +10,114 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	<meta charset="UTF-8">
 	<title>Q & A</title>
 	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class="container">
-<a href="#">Hi,<?php echo $_SESSION['Full_Name']; ?> </a>
-<button><a href="logout.php">Logout</a></button>
-
+	<!-- Header -->
+<header id="main-header">
+  <div class="cont">
+      <div class="logo">
+          
+      </div>
+      <nav id="navbar"> 
+	  <div class="dropdown">
+  <li>Hi,<?php echo $_SESSION['Full_Name']; ?> </li>
+  <div class="dropdown-content">
+  <p class="lgout"><a  href="logout.php">Logout</a></p>
+  </div>
 </div>
-	<div class="row">
-		<div class="col-md-6 col-md-offset-3 post">
-			
-			<h2 id="txtchange">Select Category</h2>
-			<!-- Category Filter -->
+  </nav>
+            <div class="search-container">       
+                <h1 id="qa">Q & A Section</h1>
+            </div>          
+  </div>
+</header><!--End of the Header -->
+<div class="all">
+
+  <!-- Category Section -->
+<div class="left">
+  <h1>Categories</h1><hr>
+ 
+  <!-- Category Filter -->
                 <form action="" method="GET">
-                    <div id="myDIV">
-							<button name="brands1[]" value="10" >All Category</button>	
-                            <?php  
+                   	
+							<div class="cat" id="myDIV">
+  <ul>
+    <li class="btn " ><button  name="brands1[]" value="10" >All Categories</button></li>
+    
+	<?php  
 					$cat = mysqli_query($db,"select * from posts order by id");
 					while($row = mysqli_fetch_array($cat)){ ?>
-					<button  value="<?php echo $row['id'];?>" name="brands[]" ><?php echo $row['title'];?></button>   
+		<li class="btn" ><button value="<?php echo $row['id'];?>" name="brands[]" ><?php echo $row['title'];?> </button> </li>
 	                  <?php } ?>   
-                    </div>
+	
+                            </li> 
+					</ul>           
                 </form></div>
 				<!-- End of Category Filter -->
+</div>
 
+
+
+<!-- Q & A Section -->
+<div class="right">
+<div id="allcat" style="display:none"><h1>All Categories</h1></div>
+	<div id="ctype">
+	<?php
+if(isset($_GET['brands'])){
+
+    if(!empty($_GET['brands'])) {
+		$branchecked = [];
+        $branchecked = $_GET['brands'];
+
+        foreach($branchecked as $value){?>
+		<?php
+			if($value==1){?>
+					<h1>HTML</h1><?php		
+			}?>
+		<?php
+			if($value==2){?>
+					<h1 >CSS</h1><?php		
+			}?>
+		<?php
+			if($value==3){?>
+					<h1 >JAVA</h1><?php		
+			}?>
+		<?php
+			if($value==4){?>
+					<h1 >C Programming</h1><?php		
+			}?>
 				
-		<!-- Comment Submit Section -->
-		<div class="col-md-6 col-md-offset-3 comments-section">
+			<?php		
+        }    
+    }
+
+}else {?> 	 
+<?php	
+}?><?php
+if(isset($_GET['brands1'])){
+
+	if(!empty($_GET['brands1'])) {
+	$branchecked2 = [];
+	$branchecked2 = $_GET['brands1'];
+
+		foreach($branchecked2 as $value1){?>
+		<?php
+		if($value1==10){?>
+				<h1>All Categories</h1><?php		
+		}?>
+		<?php
+		}        
+	}
+}else{}?></div>
+  <hr>
+
+
+  <div class="ques">
+<!-- Comment Submit Section -->
+<h3>Ask your Question.....</h3>
 			<!-- if user is not signed in, tell them to sign in. If signed in, present them with comment form -->
 			<?php if (isset($user_id)): ?>
 				<form class="clearfix" action="post_details.php" method="post" id="comment_form">
@@ -61,59 +140,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 					<h4 class="text-center"><a href="#">Sign in</a> to post a comment</h4>
 				</div>
 			<?php endif ?><!-- End of Comment Submit Section -->
-			<div id="allcat" style="display:none"><h1>All Categories</h1></div>
-	<div id="ctype">
-	<?php
-if(isset($_GET['brands'])){
-
-    if(!empty($_GET['brands'])) {
-		$branchecked = [];
-        $branchecked = $_GET['brands'];
-
-        foreach($branchecked as $value){?>
-		<?php
-			if($value==1){?>
-					<h1>HTML</h1><?php		
-			}?>
-		<?php
-			if($value==3){?>
-					<h1 >CSS</h1><?php		
-			}?>
-		<?php
-			if($value==2){?>
-					<h1 >JAVA</h1><?php		
-			}?>
-		<?php
-			if($value==4){?>
-					<h1 >C Programming</h1><?php		
-			}?>
-				
-			<?php		
-        }    
-    }
-
-}else {?> 	 
-<?php	
-}?>
-
-		
-<?php
-	if(isset($_GET['brands1'])){
-
-    	if(!empty($_GET['brands1'])) {
-		$branchecked2 = [];
-        $branchecked2 = $_GET['brands1'];
-
-        	foreach($branchecked2 as $value1){?>
-			<?php
-			if($value1==10){?>
-					<h1>All Categories</h1><?php		
-			}?>
-			<?php
-        	}        
-    	}
-	}else{}?>
-	</div>		
+<hr id="line" >
 			
 <!-- Query filter for Categories -->
 			<?php
@@ -157,9 +184,9 @@ if(isset($_GET['brands'])){
         	}        
     	}
 	}else{}?><!-- End of All Category Query-->
-			
-			<!-- comments wrapper -->
-			<div id="comments-wrapper">
+
+	<!-- comments wrapper -->
+	<div id="comments-wrapper">
 			<?php if (isset($comments1)): ?>	
 				
 				<!-- Display comments -->
@@ -192,8 +219,10 @@ if(isset($_GET['brands'])){
 										<span class="comment-date"><?php echo date("F j, Y ", strtotime($reply["created_at"])); ?></span>
 										<p><?php echo $reply['body']; ?></p>
 										<a class="reply-btn" href="#">reply</a>
+										
 									</div>
 								</div>
+								
 							<?php endforeach ?>
 						<?php endif ?>
 					</div>
@@ -205,6 +234,12 @@ if(isset($_GET['brands'])){
 			
 			<?php endif ?>
 			</div><!-- End of comments wrapper -->
+
+  </div>
+</div>
+</div>
+
+	
 		</div>
 	</div>
 </div>

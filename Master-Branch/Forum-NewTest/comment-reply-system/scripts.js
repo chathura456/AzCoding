@@ -87,8 +87,8 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+
 function func1(){
 	$("#ctype").hide();
 	$("#allcat").show();
-
 }
