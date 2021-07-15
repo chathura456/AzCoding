@@ -65,6 +65,8 @@ if (isset($_POST['comment_posted'])) {
 	$inserted_id = $db->insert_id;
 	$res = mysqli_query($db, "SELECT * FROM comments WHERE id=$inserted_id");
 	$inserted_comment = mysqli_fetch_assoc($res);
+
+	
 	// if insert was successful, get that same comment from the database and return it
 	if ($result) {
 		$comment = "<div class='comment clearfix'>
@@ -93,17 +95,7 @@ if (isset($_POST['comment_posted'])) {
 	}
 }
 
-if (isset($_POST['cttype'])){
-	$ct=$_POST['cttype'];
-	
 
-	$post_query_result1 = mysqli_query($db, "SELECT * FROM comments WHERE category='1'");
-	$post1 = mysqli_fetch_assoc($post_query_result1);
-
-	$comments_query_result1 = mysqli_query($db, "SELECT * FROM comments WHERE category=" . $post1['category'] . " ORDER BY created_at DESC");
-	$comments1 = mysqli_fetch_all($comments_query_result1, MYSQLI_ASSOC);
-
-}
 // If the user clicked submit on reply form...
 if (isset($_POST['reply_posted'])) {
 	global $db;

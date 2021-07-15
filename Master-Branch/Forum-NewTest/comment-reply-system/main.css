@@ -27,3 +27,7 @@ textarea { display: block; margin-bottom: 10px; }
 	display: none;
 }
 #comment_form { margin-top: 10px; }
+
+.active{
+	background-color: chocolate;
+  }
