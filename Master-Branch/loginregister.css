@@ -4,7 +4,7 @@ body {
 	align-items: center;
 	height: 100vh;
 	flex-direction: column;
-    background:url(2.jpg);
+    background:url(Loginpics/2.jpg);
 	background-size: cover;
 	opacity: 95%;
 	
@@ -73,7 +73,7 @@ button:hover{
 	
 	width: 350px;
 	height: 100px;
-	background: url(1.png);
+	background: url(Loginpics/1.png);
 	border-radius: 20px;
 	background-size: cover;	
 	margin-top: 5px;
