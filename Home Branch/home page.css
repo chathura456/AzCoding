@@ -102,12 +102,13 @@ a{
 /*slider*/
   .slider{
     overflow: hidden;
-    width: 60%;
+    width: 55%;
     height: 80vh;
     background-size: cover;
     margin: 0px 100px 30px 100px;
     padding-top: 30px;
     background-position: center;
+    
     
   }
 
@@ -120,7 +121,7 @@ a{
 
 .slider figure img{
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -192,6 +193,7 @@ a{
 	  justify-content: center;
 	  align-items: center;
     font-family: sans-serif;
+   
   }
 
   .Cprograming{
@@ -201,7 +203,8 @@ a{
      background-size: cover;
      float: left;
      margin: 15px;
-     border: solid 5px rgb(4, 3, 82);
+     
+     border-radius: 15px;
     
 
   }
@@ -215,7 +218,7 @@ a{
      margin: 15px;
      margin-left: 0px;
      
-     border: solid 5px rgb(4, 3, 82);
+     border-radius: 15px;
   }
 
   .css{
@@ -225,18 +228,19 @@ a{
      background-size: cover;
      float: left;
      margin: 15px;
-     border: solid 5px rgb(4, 3, 82);;
+     border-radius: 15px;
   }
 
   .java{
     width: 48%;
     height: 350px;
-     background-image: url(home-images/java2.png);
+     background-image: url(home-images/java1.jpg);
      background-size: cover;
      float: right;
      margin: 15px;
-     border: solid 5px rgb(4, 3, 82);
+     border-radius: 15px;
      margin-left: 0px;
+     
   }
 
 .learn{
@@ -251,12 +255,44 @@ font-weight: bold;
 float: right;
 margin-top: 280px;
 margin-right: 30px;
+border-radius: 10px;
 }
 
 .bgcolor{
-  background-image: url(Home-Images/7.jpg);
+  background: url(images/1.jpg);
   background-size: cover;
+  width: 100%;
+  height: 500px;
+  
+  
 }
 
+#hr1{
+  border-top: 10px solid blue;
+
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#hr2{
+  border-top: 5px solid blue;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+
+.learn1{
+  width: 100%;
+  height: auto;
+ 
+  
+}
 
 
