@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -11,6 +16,8 @@
     height: 65px;
     padding-top: 5px;
     background-color: rgb(14, 56, 241);   
+    
+    
 }
 
 .head li{
@@ -20,13 +27,13 @@
 
 a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     
 }
 
 .head button{
-    width: 150px;
+    width: 180px;
     height: 50px;
     background-color: rgb(14, 56, 241);
     border: none;
@@ -105,9 +112,11 @@ a{
     width: 55%;
     height: 80vh;
     background-size: cover;
-    margin: 0px 100px 30px 100px;
-    padding-top: 30px;
+    margin: 0px 100px 68px 100px;
+    padding-top: 60px;
+    
     background-position: center;
+    
     
     
   }
@@ -193,6 +202,7 @@ a{
 	  justify-content: center;
 	  align-items: center;
     font-family: sans-serif;
+    margin-top: 50px;
    
   }
 
@@ -229,6 +239,7 @@ a{
      float: left;
      margin: 15px;
      border-radius: 15px;
+     margin-bottom: 50px;
   }
 
   .java{
@@ -262,30 +273,36 @@ border-radius: 10px;
   background: url(images/1.jpg);
   background-size: cover;
   width: 100%;
-  height: 500px;
+ 
   
   
 }
 
 #hr1{
-  border-top: 10px solid rgb(0, 0, 5);
+  border: 2px solid rgb(31, 7, 168);
+  margin-top: 20px;
 
 }
 
 h1{
   text-align: center;
   padding: 10px;
-  font-size: 45px;
-  font-family: arial;
-  padding-top: 20px;
+  font-size: 55px;
+  font-family: Roboto;
+  
   font-weight: bold;
+  color:  rgb(31, 7, 168);
+  background-color: rgb(214, 232, 250);
+  opacity: 0.9;
+  margin-bottom: 40px;
 }
 
 #hr2{
-  border-top: 5px solid blue;
+  border: 3px solid rgb(31, 7, 168);
   margin-right: 30%;
   margin-left: 30%;
   margin-bottom: 20px;
+
 }
 
 .learn1{

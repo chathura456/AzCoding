@@ -11,6 +11,7 @@
     
 </head>
 <body>
+
     <div class="head"><!--Navigation Bar create-->
 
         <ul>
@@ -42,7 +43,7 @@
             <li><button class="dropbtn" id="1"><a href="#">Community <i class="fa fa-caret-down"></i></a></button></li>
             <div class="dropdown-content">
                 <a href="#">Q & A</a>
-                <a href="ourteam.html">Our Team</a>
+                <a href="ourteam.php">Our Team</a>
                 
             </div>
         </div>
@@ -52,10 +53,12 @@
         </ul>
     </div><!--End of the nav bar-->
 
-    <div class="bgcolor">
+    
 <center>
+<div class="bgcolor">
     <!--Slider create-->
     <div class="slider">
+   
         <figure>
 
             <div class="slide"><img src="home-images/2.jpg" alt=""></div>
@@ -68,12 +71,12 @@
         </figure>
     </div>
 <!--End of the Slider-->
-</div>
-<hr id="hr1">
+
+<hr id="hr1"></center>
 <div class="learn1">
 <h1>Learn Programming</h1>
-<hr id="hr2">
-</center>
+
+
 
 <!--Category photos and links-->
 <div class="Cprograming"><a href="category-branch/Cprogramming.html">
@@ -87,9 +90,11 @@
 </div>
 <div class="java"><a href="category-branch/java.html">
     <div class="learn">Learn More..</div></a>
+    
 </div>
-<div class="footer"><p>Copyright &copy; AzCoding 2021</p></div>
 
+<div class="footer"><p>Copyright &copy; AzCoding 2021</p></div>
+</div>
  <!-- Option 1: Bootstrap Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
