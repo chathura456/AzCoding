@@ -75,7 +75,7 @@
 <hr id="hr2"></center>
 
 <div class="learn1">
-<h1>Learn Programming</h1>
+<h1>Learn C Programming</h1>
 
 
 
@@ -84,14 +84,17 @@
     <div class="learn" >Learn More..</div></a>
 </div></div><hr id="hr1">
 <div class="learn1">
+<h1>Learn HTML</h1>
 <div class="html"><a href="category-branch/htmlsession.html">
     <div class="learn">Learn More..</div></a>
 </div></div><hr id="hr1">
 <div class="learn1">
+<h1>Learn CSS</h1>
 <div class="css"><a href="category-branch/css.html">
     <div class="learn">Learn More..</div></a>
 </div></div><hr id="hr1">
 <div class="learn1">
+<h1>Learn JAVA</h1>
 <div class="java"><a href="category-branch/java.html">
     <div class="learn">Learn More..</div></a>
     
