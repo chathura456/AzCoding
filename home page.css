@@ -109,16 +109,12 @@ a{
 /*slider*/
   .slider{
     overflow: hidden;
-    width: 55%;
+    width: 65%;
     height: 80vh;
     background-size: cover;
     margin: 0px 100px 68px 100px;
-    padding-top: 60px;
-    
-    background-position: center;
-    
-    
-    
+    padding-top: 60px;    
+    background-position: center;   
   }
 
 /*one slide*/
@@ -202,55 +198,59 @@ a{
 	  justify-content: center;
 	  align-items: center;
     font-family: sans-serif;
-    margin-top: 50px;
+
    
   }
 
   .Cprograming{
     width: 48%;
-    height: 350px;
+    height: 400px;
      background-image: url(home-images/c4.png);
      background-size: cover;
-     float: left;
-     margin: 15px;
      
-     border-radius: 15px;
     
+     margin-left: 26%;
+     margin-right: 26%;
+     border-radius: 15px;
+   
+     
 
   }
 
   .html{
     width: 48%;
-    height: 350px;
+    height: 400px;
      background-image: url(home-images/ht7.jpg);
-     background-size: cover;
-     float: right;
-     margin: 15px;
-     margin-left: 0px;
-     
+     background-size: cover;  
+     margin-left: 26%;
+     margin-right: 26%;
      border-radius: 15px;
+   
+   
   }
 
   .css{
     width: 48%;
-    height: 350px;
+    height: 400px;
      background-image: url(home-images/cs4.png);
      background-size: cover;
-     float: left;
-     margin: 15px;
+     margin-left: 26%;
+     margin-right: 26%;
      border-radius: 15px;
-     margin-bottom: 50px;
+    
+    
   }
 
   .java{
     width: 48%;
-    height: 350px;
+    height: 400px;
      background-image: url(home-images/java1.jpg);
      background-size: cover;
-     float: right;
-     margin: 15px;
+     margin-left: 26%;
+     margin-right: 26%;
      border-radius: 15px;
-     margin-left: 0px;
+    
+     
      
   }
 
@@ -264,7 +264,7 @@ align-items: center;
 color: rgb(255, 255, 255);
 font-weight: bold;
 float: right;
-margin-top: 280px;
+margin-top: 330px;
 margin-right: 30px;
 border-radius: 10px;
 }
@@ -280,7 +280,7 @@ border-radius: 10px;
 
 #hr1{
   border: 2px solid rgb(31, 7, 168);
-  margin-top: 20px;
+  
 
 }
 
@@ -289,19 +289,19 @@ h1{
   padding: 10px;
   font-size: 55px;
   font-family: Roboto;
-  
+  margin-left: 20%;
+  margin-right: 20%;
   font-weight: bold;
   color:  rgb(31, 7, 168);
   background-color: rgb(214, 232, 250);
   opacity: 0.9;
   margin-bottom: 40px;
+  border-radius: 10px;
 }
 
 #hr2{
-  border: 3px solid rgb(31, 7, 168);
-  margin-right: 30%;
-  margin-left: 30%;
-  margin-bottom: 20px;
+  border: 5px solid black;
+
 
 }
 
@@ -310,7 +310,7 @@ h1{
   height: auto;
  background: url(Home-Images/1.jpg);
  background-size: cover;
-  
+  padding: 80px;
 }
 
 
