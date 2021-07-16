@@ -21,34 +21,34 @@
             <div class="dropdown">
             <li><button class="dropbtn" id="1"><a href="#">Category  <i class="fa fa-caret-down"></i></a></button></li>
             <div class="dropdown-content">
-                <a href="category-branch/Cprogramming.html">C Programming</a>
-                <a href="#">C++</a>
-                <a href="#">HTML</a>
-                <a href="#">CSS</a>
-                <a href="#">JAVA</a>
+                <a href="Category-Branch/clesson.html">C Programming</a>
+                <a href="Category-Branch/ccc.html">C++</a>
+                <a href="Category-Branch/htmllesson.html">HTML</a>
+                <a href="Category-Branch/csslesson.html">CSS</a>
+                <a href="Category-Branch/Javalession.html">JAVA</a>
             </div>
         </div>
 
         <div class="dropdown">
             <li><button class="dropbtn" id="1"><a href="#">Recources  <i class="fa fa-caret-down"></i></a></button></li>
             <div class="dropdown-content">
-                <a href="#">YouTube</a>
-                <a href="https://www.w3schools.com/">W3School</a>
-                <a href="https://github.com/">GitHub</a>
-                <a href="https://www.codecademy.com/">CodeAcademy</a>
+                <a href="youtube.php">YouTube</a>
+                <a href="https://www.w3schools.com/" target="_blank">W3School</a>
+                <a href="https://github.com/" target="_blank">GitHub</a>
+                <a href="download.php">Downloads</a>
             </div>
         </div>
 
         <div class="dropdown">
             <li><button class="dropbtn" id="1"><a href="#">Community <i class="fa fa-caret-down"></i></a></button></li>
             <div class="dropdown-content">
-                <a href="#">Q & A</a>
+                <a href="post_details.php">Q & A</a>
                 <a href="ourteam.php">Our Team</a>
                 
             </div>
         </div>
             
-            <div class="dropdown"><li><button><a href="community-branch/downloads.html">Downloads</a></button></li></div>
+            <div class="dropdown"><li><button><a href="Category-Branch/Cprogramming.html">Try it Yourself</a></button></li></div>
             
         </ul>
     </div><!--End of the nav bar-->
@@ -72,7 +72,8 @@
     </div>
 <!--End of the Slider-->
 
-<hr id="hr1"></center>
+<hr id="hr2"></center>
+
 <div class="learn1">
 <h1>Learn Programming</h1>
 
@@ -81,17 +82,20 @@
 <!--Category photos and links-->
 <div class="Cprograming"><a href="category-branch/Cprogramming.html">
     <div class="learn" >Learn More..</div></a>
-</div>
+</div></div><hr id="hr1">
+<div class="learn1">
 <div class="html"><a href="category-branch/htmlsession.html">
     <div class="learn">Learn More..</div></a>
-</div>
+</div></div><hr id="hr1">
+<div class="learn1">
 <div class="css"><a href="category-branch/css.html">
     <div class="learn">Learn More..</div></a>
-</div>
+</div></div><hr id="hr1">
+<div class="learn1">
 <div class="java"><a href="category-branch/java.html">
     <div class="learn">Learn More..</div></a>
     
-</div>
+</div></div>
 
 <div class="footer"><p>Copyright &copy; AzCoding 2021</p></div>
 </div>
