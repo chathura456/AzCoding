@@ -10,7 +10,9 @@
 </head>
 <body>
     <!-- Our Team -->
+    <div class="logo"></div>
     <div class="team-section">
+   <a href="index.php"><img src="logo2.png" style="width: 200px; float:left"></a> 
         <h1>Our Team</h1>
         <span class="bdr1"></span>
         <!-- Images -->

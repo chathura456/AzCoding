@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -11,6 +16,8 @@
     height: 65px;
     padding-top: 5px;
     background-color: rgb(14, 56, 241);   
+    
+    
 }
 
 .head li{
@@ -20,13 +27,13 @@
 
 a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     
 }
 
 .head button{
-    width: 150px;
+    width: 180px;
     height: 50px;
     background-color: rgb(14, 56, 241);
     border: none;
@@ -102,12 +109,15 @@ a{
 /*slider*/
   .slider{
     overflow: hidden;
-    width: 60%;
+    width: 55%;
     height: 80vh;
     background-size: cover;
-    margin: 0px 100px 30px 100px;
-    padding-top: 30px;
+    margin: 0px 100px 68px 100px;
+    padding-top: 60px;
+    
     background-position: center;
+    
+    
     
   }
 
@@ -120,7 +130,7 @@ a{
 
 .slider figure img{
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -192,6 +202,8 @@ a{
 	  justify-content: center;
 	  align-items: center;
     font-family: sans-serif;
+    margin-top: 50px;
+   
   }
 
   .Cprograming{
@@ -201,7 +213,8 @@ a{
      background-size: cover;
      float: left;
      margin: 15px;
-     border: solid 5px rgb(4, 3, 82);
+     
+     border-radius: 15px;
     
 
   }
@@ -215,7 +228,7 @@ a{
      margin: 15px;
      margin-left: 0px;
      
-     border: solid 5px rgb(4, 3, 82);
+     border-radius: 15px;
   }
 
   .css{
@@ -225,18 +238,20 @@ a{
      background-size: cover;
      float: left;
      margin: 15px;
-     border: solid 5px rgb(4, 3, 82);;
+     border-radius: 15px;
+     margin-bottom: 50px;
   }
 
   .java{
     width: 48%;
     height: 350px;
-     background-image: url(home-images/java2.png);
+     background-image: url(home-images/java1.jpg);
      background-size: cover;
      float: right;
      margin: 15px;
-     border: solid 5px rgb(4, 3, 82);
+     border-radius: 15px;
      margin-left: 0px;
+     
   }
 
 .learn{
@@ -251,12 +266,51 @@ font-weight: bold;
 float: right;
 margin-top: 280px;
 margin-right: 30px;
+border-radius: 10px;
 }
 
 .bgcolor{
-  background-image: url(Home-Images/7.jpg);
+  background: url(images/1.jpg);
   background-size: cover;
+  width: 100%;
+ 
+  
+  
 }
 
+#hr1{
+  border: 2px solid rgb(31, 7, 168);
+  margin-top: 20px;
+
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+  font-size: 55px;
+  font-family: Roboto;
+  
+  font-weight: bold;
+  color:  rgb(31, 7, 168);
+  background-color: rgb(214, 232, 250);
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+#hr2{
+  border: 3px solid rgb(31, 7, 168);
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 20px;
+
+}
+
+.learn1{
+  width: 100%;
+  height: auto;
+ background: url(Home-Images/1.jpg);
+ background-size: cover;
+  
+}
 
 

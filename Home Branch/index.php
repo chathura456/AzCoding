@@ -11,6 +11,7 @@
     
 </head>
 <body>
+
     <div class="head"><!--Navigation Bar create-->
 
         <ul>
@@ -42,7 +43,7 @@
             <li><button class="dropbtn" id="1"><a href="#">Community <i class="fa fa-caret-down"></i></a></button></li>
             <div class="dropdown-content">
                 <a href="#">Q & A</a>
-                <a href="ourteam.html">Our Team</a>
+                <a href="ourteam.php">Our Team</a>
                 
             </div>
         </div>
@@ -52,20 +53,31 @@
         </ul>
     </div><!--End of the nav bar-->
 
-<div class="bgcolor">
+    
 <center>
+<div class="bgcolor">
     <!--Slider create-->
     <div class="slider">
+   
         <figure>
-            <div class="slide"><img src="home-images/13.jpeg" alt=""></div>
+
             <div class="slide"><img src="home-images/2.jpg" alt=""></div>
-            <div class="slide"><img src="home-images/3.jpg" alt=""></div>
-            <div class="slide"><img src="home-images/4.jpg" alt=""></div>
-            <div class="slide"><img src="home-images/5.png" alt=""></div>
+            <div class="slide"><img src="images/13.jpg" alt=""></div>
+            <div class="slide"><img src="images/14.jpg" alt=""></div> 
+            <div class="slide"><img src="images/12.jpg" alt=""></div>
+            
+            <div class="slide"><img src="images/11.jpeg" alt=""></div>
+            
         </figure>
     </div>
 <!--End of the Slider-->
-</center>
+
+<hr id="hr1"></center>
+<div class="learn1">
+<h1>Learn Programming</h1>
+
+
+
 <!--Category photos and links-->
 <div class="Cprograming"><a href="category-branch/Cprogramming.html">
     <div class="learn" >Learn More..</div></a>
@@ -78,7 +90,9 @@
 </div>
 <div class="java"><a href="category-branch/java.html">
     <div class="learn">Learn More..</div></a>
+    
 </div>
+
 <div class="footer"><p>Copyright &copy; AzCoding 2021</p></div>
 </div>
  <!-- Option 1: Bootstrap Bundle with Popper -->
