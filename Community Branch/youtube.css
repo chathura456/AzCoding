@@ -7,7 +7,7 @@ box-sizing: border-box;
 }
 
 body{
-    background: url(1.jpg);
+    background: url(photos/y1.jpg);
     background-size: cover;
 }
 
@@ -37,7 +37,7 @@ h1{
     font-size: 23px;
     width: 50%;
     height: auto;
-    background-color: rgb(247, 240, 247);
+    background-color: white;
     margin-left: 20%;
     margin-right: 20%;
     padding: 20px;
