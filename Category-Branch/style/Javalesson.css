@@ -74,17 +74,6 @@ nav ul li a:hover{
     text-transform:uppercase;
 }
 
-.search{
-
-    border-radius: 30px;
-    width:190px;
-    height: 50px;
-    margin-top: 15px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-}
-
 @media screen and (max-width: 600px ) {
     
     .container { width: 100px;}
@@ -108,4 +97,3 @@ nav ul li a:hover{
     color: white;
     margin-left: 480px;
 }
-
