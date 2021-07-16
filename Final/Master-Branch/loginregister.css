@@ -1,0 +1,103 @@
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+    background:url(Loginpics/2.jpg);
+	background-size: cover;
+	opacity: 95%;
+	
+}
+
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+	
+}
+
+form {
+	width: 400px;
+	padding: 25px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background: #fff;
+	border-radius: 15px;
+	
+}
+
+h2{
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 10px;
+	color: rgb(187, 37, 37);
+	text-decoration: underline;
+	
+}
+
+input {
+	display: block;
+	border: 2px solid rgb(31, 164, 226);
+	width: 95%;
+	padding: 15px;
+	margin: 4px 10px;
+	border-radius: 30px;
+}
+
+input:focus {	
+	border-radius: 0px;	
+}
+
+button {
+	display: block;
+	align-items: center;
+	width: 50%;
+	background: rgb(168, 5, 5);
+	padding: 10px 10px;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+	margin-top: 10px;
+	border: none;
+}
+
+button:hover{
+	opacity: .7;
+}
+
+#azlogo{
+	
+	width: 350px;
+	height: 100px;
+	background: url(Loginpics/1.png);
+	border-radius: 20px;
+	background-size: cover;	
+	margin-top: 5px;
+		
+}
+
+.error {
+	background: #F2DEDE;
+	color: #A94442;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 20px auto;
+ }
+ 
+ .success {
+	background: #bcf5ca;
+	color: #11ca3d;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 20px auto;
+ }
+
+
+
+
