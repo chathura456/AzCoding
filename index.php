@@ -83,17 +83,17 @@
 <div class="Cprograming"><a href="category-branch/Cprogramming.html">
     <div class="learn" >Learn More..</div></a>
 </div></div><hr id="hr1">
-<div class="learn1">
+<div class="learn1" id="i1">
 <h1>Learn HTML</h1>
 <div class="html"><a href="category-branch/htmlsession.html">
     <div class="learn">Learn More..</div></a>
 </div></div><hr id="hr1">
-<div class="learn1">
+<div class="learn1" id="3i">
 <h1>Learn CSS</h1>
 <div class="css"><a href="category-branch/css.html">
     <div class="learn">Learn More..</div></a>
 </div></div><hr id="hr1">
-<div class="learn1">
+<div class="learn1" id="4i">
 <h1>Learn JAVA</h1>
 <div class="java"><a href="category-branch/java.html">
     <div class="learn">Learn More..</div></a>
