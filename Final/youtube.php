@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="top">
-        <a href="index.php"><button class="btn"><i class="fa fa-home"></i></button></a>
+        <a href="home-branch/home.html"><button class="btn"><i class="fa fa-home"></i></button></a>
         <h1>YouTube Resources</h1>
     </div>
     
