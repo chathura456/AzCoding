@@ -8,11 +8,12 @@
 	<script  type="text/javascript" src="https://codemirror.net/mode/css/css.js"></script>
 	<script  type="text/javascript" src="https://codemirror.net/mode/javascript/javascript.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="Compiler.css">
 </head>
 <body>
 
 	<div class="header">
+	<a href="index.php"><img src="logo2.png" style="width: 200px; float:left"></a> 
 		<button id="run-btn">Run</button>
 	</div>
 	<div class="editor">
