@@ -18,9 +18,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['Full_Name'])) {
 	<!-- Header -->
 <header id="main-header">
   <div class="cont">
-      <div class="logo">
+     <a href="index.php"> <div class="logo">
           
-      </div>
+      </div></a>
       <nav id="navbar"> 
 	  <div class="dropdown">
   <li>Hi,<?php echo $_SESSION['Full_Name']; ?> </li>

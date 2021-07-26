@@ -203,14 +203,14 @@ a{
   }
 
   .Cprograming{
-    width: 48%;
-    height: 400px;
+    width: 60%;
+    height: 450px;
      background-image: url(home-images/c4.png);
      background-size: cover;
      
     
-     margin-left: 26%;
-     margin-right: 26%;
+     margin-left: 20%;
+     margin-right: 20%;
      border-radius: 15px;
    
      
@@ -218,40 +218,35 @@ a{
   }
 
   .html{
-    width: 48%;
-    height: 400px;
+    width: 60%;
+    height: 450px;
      background-image: url(home-images/ht7.jpg);
      background-size: cover;  
-     margin-left: 26%;
-     margin-right: 26%;
+     margin-left: 20%;
+     margin-right: 20%;
      border-radius: 15px;
    
    
   }
 
   .css{
-    width: 48%;
-    height: 400px;
+    width: 60%;
+    height: 450px;
      background-image: url(home-images/cs4.png);
      background-size: cover;
-     margin-left: 26%;
-     margin-right: 26%;
-     border-radius: 15px;
-    
-    
+     margin-left: 20%;
+     margin-right: 20%;
+     border-radius: 15px; 
   }
 
   .java{
-    width: 48%;
-    height: 400px;
+    width: 60%;
+    height: 450px;
      background-image: url(home-images/java1.jpg);
      background-size: cover;
-     margin-left: 26%;
-     margin-right: 26%;
+     margin-left: 20%;
+     margin-right: 20%;
      border-radius: 15px;
-    
-     
-     
   }
 
 .learn{
@@ -314,6 +309,14 @@ h1{
 }
 
 
-#il{
-  background: url(images/2.jpg);
+#i4{
+  background-image: url(Home-Images/b2.jpg);
+}
+
+#i2{
+  background-image: url(Home-Images/b9.jpg);
+}
+
+#i3{
+  background-image: url(Home-Images/b8.jpg);
 }
