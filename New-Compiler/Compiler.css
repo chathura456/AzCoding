@@ -14,14 +14,19 @@ body {
 	align-items: center;
 }
 
-button{
-	margin-left: 250px;
+
+#run-btn{
+	
 	background: white;
 	color: #111;
-	font-size: 20px;
-	font-weight: bold;	
+	font-size: 25px;
+	font-weight: bold;
+    margin-left: 350px;
 	cursor: pointer;
 	border: none;
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
 }
 
 .editor{
@@ -48,7 +53,7 @@ button{
 
 
 .codeMirror{
-	height: 33.33%;
+	height: 25%;
 }
 
 h1{
